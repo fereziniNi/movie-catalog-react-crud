@@ -1,6 +1,6 @@
 import './App.css'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Inicio from './paginas/inicio/Inicio';
+import Inicio from './paginas/Inicio/Inicio';
 
 import Criar from './paginas/Criar/Criar';
 import Cabecalho from './components/Cabecalho/Cabecalho';
