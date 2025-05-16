@@ -1,0 +1,33 @@
+/* Rodape.module.css */
+.rodape {
+    background-color: #141414;
+    /* Netflix black */
+    color: #808080;
+    /* Netflix light gray */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: 1px solid #333;
+    width: 100%;
+    margin-top: auto;
+    /* Empurra o rodapé para baixo */
+}
+
+/* Links que possam estar no footer */
+.rodape a {
+    color: #808080;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .rodape {
+        padding: 20px 4%;
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,104 @@
+/* Netflix-style Menu CSS */
+
+:root {
+    --netflix-red: #E50914;
+    --netflix-black: #141414;
+    --netflix-dark-gray: #181818;
+    --netflix-light-gray: #808080;
+    --netflix-white: #FFFFFF;
+    --netflix-hover: #E50914;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--netflix-black);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: var(--netflix-white);
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 0 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Adiciona efeito de fundo sólido quando rolar a página */
+header.scrolled {
+    background-color: var(--netflix-black);
+}
+
+.navegacao {
+    display: flex;
+    align-items: center;
+    height: 68px;
+}
+
+/* Adicione esta classe para colocar o logo da Netflix antes dos links */
+.navegacao::before {
+    content: "NETIFSP";
+    color: var(--netflix-red);
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-right: 30px;
+    letter-spacing: 0.5px;
+}
+
+/* Estilo para o MenuLink - Supondo que ele seja um componente personalizado */
+.navegacao a {
+    color: var(--netflix-light-gray);
+    margin-left: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.3s;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+
+.navegacao a:hover,
+.navegacao a.active {
+    color: var(--netflix-white);
+}
+
+/* Efeito de underline no hover */
+.navegacao a {
+    position: relative;
+}
+
+.navegacao a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--netflix-red);
+    transition: width 0.3s ease;
+}
+
+.navegacao a:hover::after,
+.navegacao a.active::after {
+    width: 100%;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    .navegacao::before {
+        font-size: 1.2rem;
+    }
+
+    .navegacao a {
+        font-size: 0.8rem;
+        margin-left: 10px;
+    }
+}

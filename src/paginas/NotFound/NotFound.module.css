@@ -1,0 +1,106 @@
+/* NaoEncontrada.module.css */
+.conteudoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 8% 2% 0% 0%;
+    color: #FFFFFF;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.texto404 {
+    font-size: 8rem;
+    font-weight: 700;
+    color: #E50914;
+    /* Vermelho Netflix */
+    margin-bottom: 1rem;
+    text-shadow: 0 0 6px rgba(229, 9, 20, 0.3);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.titulo {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.paragrafo {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #CCCCCC;
+    line-height: 1.5;
+    max-width: 600px;
+}
+
+.botaoContainer {
+    margin: 2rem 0;
+}
+
+.botaoVoltar {
+    background-color: #E50914;
+    /* Vermelho Netflix */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.botaoVoltar:hover {
+    background-color: #F40612;
+    /* Vermelho Netflix hover */
+    transform: scale(1.05);
+}
+
+.botaoVoltar:active {
+    transform: scale(0.98);
+}
+
+@keyframes flutuacao {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .texto404 {
+        font-size: 6rem;
+    }
+
+    .titulo {
+        font-size: 1.8rem;
+    }
+
+    .paragrafo {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .texto404 {
+        font-size: 5rem;
+    }
+
+    .titulo {
+        font-size: 1.5rem;
+    }
+
+    .paragrafo {
+        font-size: 0.9rem;
+    }
+
+}

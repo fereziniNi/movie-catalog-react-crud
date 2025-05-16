@@ -1,0 +1,41 @@
+/* Mantenha suas definições de variáveis e outros estilos existentes */
+:root {
+    --netflix-red: #E50914;
+    --netflix-black: #141414;
+    --netflix-dark-gray: #181818;
+    --netflix-light-gray: #808080;
+    --netflix-white: #FFFFFF;
+    --fonte-principal: 'Helvetica Neue', Arial, sans-serif;
+    --fonte-secundaria: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Estas são as configurações essenciais para garantir que o layout funcione corretamente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: var(--netflix-black);
+    color: var(--netflix-white);
+    font-family: var(--fonte-principal);
+}
+
+/* Esta configuração é crucial para garantir que o footer fique no final da página */
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Altura mínima de 100% da viewport */
+}
+
+main {
+    flex: 1;
+    /* Faz o conteúdo principal ocupar todo o espaço disponível */
+    margin-top: 68px;
+    /* Espaço para o header fixo */
+    padding: 20px 4%;
+}
