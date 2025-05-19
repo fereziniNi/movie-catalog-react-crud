@@ -1,33 +1,38 @@
-# React + Vite
+# 🎬 Movie Catalog React CRUD
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and dynamic movie catalog web application developed with React. This project allows users to perform CRUD (Create, Read, Update, Delete) operations on a movie database via a clean and modern interface.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📦 Features
 
-## Expanding the ESLint configuration
+- 📥 Add new movies to the catalog
+- 🔍 View the list of registered movies
+- ✏️ Edit movie information
+- 🗑️ Delete movies from the catalog
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-🎬 Catálogo de Filmes - CRUD com React
+---
 
-Este projeto é uma aplicação web desenvolvida com React que permite realizar operações CRUD (Create, Read, Update, Delete) em um catálogo de filmes. A interface é responsiva e intuitiva, possibilitando a adição, visualização, edição e exclusão de filmes de forma dinâmica.
-🛠️ Tecnologias utilizadas:
+## 🛠️ Technologies Used
 
-    React – para a criação da interface do usuário
+- React
+- React DOM
+- Axios (for HTTP requests)
+- Vite (build tool)
+- ESLint (for code linting)
+- (Optional) JSON Server or Mock API for local testing
 
-    React DOM – para manipulação da árvore de componentes no navegador
+---
 
-    Axios – para realizar requisições HTTP (integração com API simulada ou real)
+## 🚀 Getting Started
 
-📌 Funcionalidades:
+### 📌 Prerequisites
 
-    📥 Adicionar novos filmes ao catálogo
+- Node.js 18+
+- npm or yarn
 
-    🔍 Visualizar lista de filmes cadastrados
+### 📦 Installation
 
-    ✏️ Editar informações de um filme
-
-    🗑️ Remover filmes do catálogo
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/fereziniNi/movie-catalog-react-crud.git
