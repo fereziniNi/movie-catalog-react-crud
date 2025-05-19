@@ -31,4 +31,3 @@ Este projeto é uma aplicação web desenvolvida com React que permite realizar 
     ✏️ Editar informações de um filme
 
     🗑️ Remover filmes do catálogo
->>>>>>> 032eb5459bfaa7bc8427bca2d899cda1a747eb63
