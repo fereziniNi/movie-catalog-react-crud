@@ -20,7 +20,6 @@ A responsive and dynamic movie catalog web application developed with React. Thi
 - Axios (for HTTP requests)
 - Vite (build tool)
 - ESLint (for code linting)
-- (Optional) JSON Server or Mock API for local testing
 
 ---
 
