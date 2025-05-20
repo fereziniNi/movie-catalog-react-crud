@@ -1,6 +1,6 @@
 # 🎬 Movie Catalog React CRUD
 
-Link do projeto postado[https://netflix-ifsp-ferezininis-projects.vercel.app/]
+[Projeto no Vercel](https://netflix-ifsp-ferezininis-projects.vercel.app/)
 
 Um aplicativo web responsivo e dinâmico para catálogo de filmes desenvolvido com React. Este projeto permite aos usuários realizar operações CRUD (Criar, Ler, Atualizar, Deletar) em um banco de dados de filmes através de uma interface limpa e moderna.
 
